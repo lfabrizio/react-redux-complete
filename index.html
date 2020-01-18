@@ -16,8 +16,19 @@
                 name: 'Ryu',
                 age: 30
             }
-            handleClick(e){
-                console.log(e.target);
+            handleClick = (e) => {
+                // console.log(e.target);
+                this.setState({ 
+                    name: 'Yoshi',
+                    age: 25
+                })
+                console.log(this.state);
+            }
+            handleMouseOver = (e) => {
+                console.log(e.target, e.pageX);
+            }
+            handleCopy = (e) => {
+                console.log('be original');
             }
            render() {
                return(
@@ -25,6 +36,8 @@
                    <h1> Hey, Ninjas! </h1>
                    <p>My name is { this.state.name } and I am { this.state.age }</p>
                    <button onClick={this.handleClick}>click me</button>
+                   <button onMouseOver={this.handleMouseOver}>hover me</button>
+                   <p onCopy={this.handleCopy}>what we think we become</p>
                    </div>
                )
            } 
