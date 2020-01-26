@@ -1,0 +1,8 @@
+body {
+    background: blue;
+    transition: all 1s;
+}
+
+form{
+    padding: 20px
+}

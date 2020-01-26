@@ -1,4 +1,5 @@
 import React from 'react';
+import './Ninjas.css'
 
 const Ninjas = ({ninjas, deleteNinja}) => {
         const ninjaList = ninjas.map(ninja => {
@@ -20,5 +21,5 @@ const Ninjas = ({ninjas, deleteNinja}) => {
             <div className="ninja-list">
         { ninjaList }         
             </div>
-
+        )}
 export default Ninjas
